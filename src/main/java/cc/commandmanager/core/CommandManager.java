@@ -8,7 +8,8 @@ import java.util.Set;
 import net.sf.qualitycheck.Check;
 import net.sf.qualitycheck.exception.IllegalStateOfArgumentException;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
@@ -22,7 +23,7 @@ import com.google.common.collect.Sets;
  */
 public class CommandManager {
 
-	private static final Logger logger = Logger.getLogger(CommandManager.class);
+	private static final Logger logger = LogManager.getLogger();
 
 	private final Context context;
 	private final CommandGraph commandGraph;

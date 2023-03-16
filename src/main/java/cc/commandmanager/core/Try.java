@@ -5,7 +5,7 @@ import javax.annotation.Nullable;
 import net.sf.qualitycheck.Check;
 import net.sf.qualitycheck.exception.IllegalNullArgumentException;
 
-import com.google.common.base.Objects;
+import com.google.common.base.MoreObjects;
 
 /**
  * Optional instance of type <b>T</b>. If the instance is not present you may receive a note why by calling
@@ -82,7 +82,7 @@ public class Try<T> {
 
 	@Override
 	public String toString() {
-		return Objects.toStringHelper(this).add("value", value).add("note", note).toString();
+		return MoreObjects.toStringHelper(this).add("value", value).add("note", note).toString();
 	}
 
 	@Override
