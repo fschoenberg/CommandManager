@@ -1,3 +1,6 @@
+## This is experimental only
+Logging mechanism is changed to log4j2
+
 ## CommandManager
 
 ### Description
